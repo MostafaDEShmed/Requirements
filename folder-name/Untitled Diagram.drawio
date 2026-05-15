@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="oID8WqVxFp_ZHYl8Nj91">
+    <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Users Entity -->
+        <mxCell id="u1" value="Users&#xa;--&#xa;PK user_id&#xa;name&#xa;email&#xa;location" style="shape=swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="240" width="160" height="100" as="geometry" />
+        </mxCell>
+        <!-- SoilAnalysis Entity -->
+        <mxCell id="s1" value="SoilAnalysis&#xa;--&#xa;PK analysis_id&#xa;FK user_id&#xa;n_content&#xa;p_content&#xa;k_content&#xa;ph_level&#xa;moisture&#xa;timestamp" style="shape=swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="40" width="180" height="160" as="geometry" />
+        </mxCell>
+        <!-- CropRecommendations Entity -->
+        <mxCell id="c1" value="CropRecommendations&#xa;--&#xa;PK crop_rec_id&#xa;FK analysis_id&#xa;crop_name&#xa;confidence_score" style="shape=swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="20" width="200" height="100" as="geometry" />
+        </mxCell>
+        <!-- FertilizerRecommendations Entity -->
+        <mxCell id="f1" value="FertilizerRecommendations&#xa;--&#xa;PK fert_rec_id&#xa;FK analysis_id&#xa;fertilizer_name&#xa;dosage" style="shape=swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="140" width="200" height="100" as="geometry" />
+        </mxCell>
+        <!-- DiseaseDetection Entity -->
+        <mxCell id="d1" value="DiseaseDetection&#xa;--&#xa;PK detection_id&#xa;FK user_id&#xa;image_url&#xa;disease_name&#xa;treatment&#xa;timestamp" style="shape=swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="220" width="180" height="140" as="geometry" />
+        </mxCell>
+        <!-- ChatHistory Entity -->
+        <mxCell id="ch1" value="ChatHistory&#xa;--&#xa;PK chat_id&#xa;FK user_id&#xa;message&#xa;response&#xa;timestamp" style="shape=swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="380" width="180" height="120" as="geometry" />
+        </mxCell>
+        <!-- WeatherData Entity -->
+        <mxCell id="w1" value="WeatherData&#xa;--&#xa;PK weather_id&#xa;location&#xa;temperature&#xa;humidity&#xa;rainfall&#xa;timestamp" style="shape=swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="160" height="140" as="geometry" />
+        </mxCell>
+        <!-- Reports Entity -->
+        <mxCell id="r1" value="Reports&#xa;--&#xa;PK report_id&#xa;FK user_id&#xa;content&#xa;generated_at" style="shape=swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="520" width="180" height="100" as="geometry" />
+        </mxCell>
+        <!-- Relationships -->
+        <!-- User to SoilAnalysis (1:N) -->
+        <mxCell id="rel1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="u1" target="s1">
+          <mxGeometry relative="1" as="geometry">
+            <Array points="120,210,260,210,260,120" />
+          </mxGeometry>
+        </mxCell>
+        <!-- SoilAnalysis to CropRecommendations (1:N) -->
+        <mxCell id="rel2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="s1" target="c1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- SoilAnalysis to FertilizerRecommendations (1:N) -->
+        <mxCell id="rel3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="s1" target="f1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- User to DiseaseDetection (1:N) -->
+        <mxCell id="rel4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="u1" target="d1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- User to ChatHistory (1:N) -->
+        <mxCell id="rel5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="u1" target="ch1">
+          <mxGeometry relative="1" as="geometry">
+            <Array points="120,440" />
+          </mxGeometry>
+        </mxCell>
+        <!-- User to Reports (1:N) -->
+        <mxCell id="rel6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="u1" target="r1">
+          <mxGeometry relative="1" as="geometry">
+            <Array points="80,570" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
