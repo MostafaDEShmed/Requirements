@@ -1,0 +1,190 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="6bsKAm2Q9C89QGm7i5oq">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1800">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="system_boundary" value="AI Crop &amp; Fertilizer Recommendation System" style="shape=swimlane;whiteSpace=wrap;html=1;startSize=30;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="220" y="40" width="760" height="1720" as="geometry" />
+        </mxCell>
+        <mxCell id="actor_farmer" value="Farmer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="450" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="actor_consultant" value="Agricultural&#xa;Consultant" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1050" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="actor_admin" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1450" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="actor_weather" value="Weather API" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="150" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="actor_gis" value="GIS Service" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="350" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="actor_ai" value="AI Services" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="850" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_register" value="Register Account" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="system_boundary">
+          <mxGeometry x="50" y="50" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_login" value="Login" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="system_boundary">
+          <mxGeometry x="50" y="120" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_profile" value="Manage Profile" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="system_boundary">
+          <mxGeometry x="50" y="190" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_soil_data" value="Enter Soil Data" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="system_boundary">
+          <mxGeometry x="50" y="260" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_soil_report" value="Upload Soil Report" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="system_boundary">
+          <mxGeometry x="50" y="330" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_crop_rec" value="Get Crop Recommendation" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="system_boundary">
+          <mxGeometry x="50" y="400" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_fert_rec" value="Get Fertilizer Recommendation" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="system_boundary">
+          <mxGeometry x="50" y="480" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_disease_detect" value="Detect Plant Disease" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="system_boundary">
+          <mxGeometry x="50" y="560" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_rag_chat" value="Chat with RAG AI Assistant" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="system_boundary">
+          <mxGeometry x="50" y="650" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_weather_view" value="View Weather Forecast" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="system_boundary">
+          <mxGeometry x="50" y="750" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_gis_view" value="View GIS Heatmap" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="system_boundary">
+          <mxGeometry x="50" y="820" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_history" value="View Previous Analyses" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="system_boundary">
+          <mxGeometry x="50" y="890" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_consult_review" value="Review Farmer Recommendations" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="system_boundary">
+          <mxGeometry x="50" y="1000" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_consult_chat" value="View Chatbot Interactions" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="system_boundary">
+          <mxGeometry x="50" y="1080" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_admin_users" value="Manage Users" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="system_boundary">
+          <mxGeometry x="50" y="1200" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_admin_kb" value="Manage Knowledge Base" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="system_boundary">
+          <mxGeometry x="50" y="1270" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_admin_monitor" value="Monitor AI Services" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="system_boundary">
+          <mxGeometry x="50" y="1350" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_ai_crop_pred" value="Crop Prediction" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="system_boundary">
+          <mxGeometry x="550" y="400" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_ai_fert_pred" value="Fertilizer Recommendation" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="system_boundary">
+          <mxGeometry x="550" y="480" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_ai_disease_pred" value="Disease Detection" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="system_boundary">
+          <mxGeometry x="550" y="560" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_ai_embed" value="Embedding Generation" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="system_boundary">
+          <mxGeometry x="550" y="640" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_ai_search" value="Semantic Search" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="system_boundary">
+          <mxGeometry x="550" y="710" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_ai_rag_gen" value="RAG Response Generation" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="system_boundary">
+          <mxGeometry x="550" y="780" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_weather_data" value="Provide Weather Data" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="system_boundary">
+          <mxGeometry x="550" y="100" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_gis_data" value="Provide Geospatial Data" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="system_boundary">
+          <mxGeometry x="550" y="300" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rel1" edge="1" parent="1" source="actor_farmer" target="uc_register">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel2" edge="1" parent="1" source="actor_farmer" target="uc_login">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel3" edge="1" parent="1" source="actor_farmer" target="uc_crop_rec">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel4" edge="1" parent="1" source="actor_farmer" target="uc_fert_rec">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel5" edge="1" parent="1" source="actor_farmer" target="uc_disease_detect">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel6" edge="1" parent="1" source="actor_farmer" target="uc_rag_chat">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel7" edge="1" parent="1" source="actor_farmer" target="uc_weather_view">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel8" edge="1" parent="1" source="actor_farmer" target="uc_gis_view">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel9" edge="1" parent="1" source="actor_consultant" target="uc_login">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel10" edge="1" parent="1" source="actor_consultant" target="uc_consult_review">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel11" edge="1" parent="1" source="actor_consultant" target="uc_consult_chat">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel12" edge="1" parent="1" source="actor_admin" target="uc_login">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel13" edge="1" parent="1" source="actor_admin" target="uc_admin_users">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel14" edge="1" parent="1" source="actor_admin" target="uc_admin_kb">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc1" value="&lt;&lt;include&gt;&gt;" style="endArrow=open;endSize=12;dashed=1;html=1;" edge="1" parent="system_boundary" source="uc_crop_rec" target="uc_ai_crop_pred">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc2" value="&lt;&lt;include&gt;&gt;" style="endArrow=open;endSize=12;dashed=1;html=1;" edge="1" parent="system_boundary" source="uc_fert_rec" target="uc_ai_fert_pred">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc3" value="&lt;&lt;include&gt;&gt;" style="endArrow=open;endSize=12;dashed=1;html=1;" edge="1" parent="system_boundary" source="uc_disease_detect" target="uc_ai_disease_pred">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc4" value="&lt;&lt;include&gt;&gt;" style="endArrow=open;endSize=12;dashed=1;html=1;" edge="1" parent="system_boundary" source="uc_rag_chat" target="uc_ai_embed">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc5" value="&lt;&lt;include&gt;&gt;" style="endArrow=open;endSize=12;dashed=1;html=1;" edge="1" parent="system_boundary" source="uc_rag_chat" target="uc_ai_search">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc6" value="&lt;&lt;include&gt;&gt;" style="endArrow=open;endSize=12;dashed=1;html=1;" edge="1" parent="system_boundary" source="uc_rag_chat" target="uc_ai_rag_gen">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_api1" edge="1" parent="1" source="actor_weather" target="uc_weather_data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_api2" edge="1" parent="1" source="actor_gis" target="uc_gis_data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_ai1" edge="1" parent="1" source="actor_ai" target="uc_ai_crop_pred">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_ai2" edge="1" parent="1" source="actor_ai" target="uc_ai_fert_pred">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_ai3" edge="1" parent="1" source="actor_ai" target="uc_ai_disease_pred">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_ai4" edge="1" parent="1" source="actor_ai" target="uc_ai_embed">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_ai5" edge="1" parent="1" source="actor_ai" target="uc_ai_search">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_ai6" edge="1" parent="1" source="actor_ai" target="uc_ai_rag_gen">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
