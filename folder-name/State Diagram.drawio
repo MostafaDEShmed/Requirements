@@ -1,0 +1,209 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="dPzlkr3fuxXF8za6e7UI">
+    <mxGraphModel dx="1422" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- States -->
+        <mxCell id="state_start" value="" style="ellipse;fillColor=strokeColor;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="20" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="state_auth" value="User Authentication" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="485" y="90" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="state_dashboard" value="Dashboard" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="485" y="200" width="140" height="50" as="geometry" />
+        </mxCell>
+        <!-- Soil Path -->
+        <mxCell id="state_soil_entry" value="Entering Soil Data" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40" vertex="1" parent="1">
+          <mxGeometry x="100" y="280" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="state_soil_val" value="Validating Soil Data" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40" vertex="1" parent="1">
+          <mxGeometry x="100" y="370" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="state_crop_proc" value="Processing Crop Recommendation" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40" vertex="1" parent="1">
+          <mxGeometry x="100" y="460" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="state_crop_view" value="Viewing Crop Recommendation" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40" vertex="1" parent="1">
+          <mxGeometry x="100" y="550" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="state_fert_proc" value="Processing Fertilizer Recommendation" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40" vertex="1" parent="1">
+          <mxGeometry x="100" y="640" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="state_fert_view" value="Viewing Fertilizer Recommendation" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40" vertex="1" parent="1">
+          <mxGeometry x="100" y="730" width="140" height="50" as="geometry" />
+        </mxCell>
+        <!-- Disease Path -->
+        <mxCell id="state_img_upload" value="Uploading Plant Image" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40" vertex="1" parent="1">
+          <mxGeometry x="485" y="280" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="state_img_val" value="Validating Plant Image" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40" vertex="1" parent="1">
+          <mxGeometry x="485" y="370" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="state_disease_det" value="Detecting Plant Disease" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40" vertex="1" parent="1">
+          <mxGeometry x="485" y="460" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="state_disease_view" value="Viewing Disease Detection Result" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40" vertex="1" parent="1">
+          <mxGeometry x="485" y="550" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="state_treat_gen" value="Generating Treatment Recommendation" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40" vertex="1" parent="1">
+          <mxGeometry x="485" y="640" width="140" height="50" as="geometry" />
+        </mxCell>
+        <!-- RAG Path -->
+        <mxCell id="state_chatbot" value="Chatbot Interaction" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40" vertex="1" parent="1">
+          <mxGeometry x="870" y="280" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="state_embed" value="Generating Embeddings" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40" vertex="1" parent="1">
+          <mxGeometry x="870" y="370" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="state_vector" value="Searching Vector Database" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40" vertex="1" parent="1">
+          <mxGeometry x="870" y="460" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="state_retrieve" value="Retrieving Agricultural Knowledge" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40" vertex="1" parent="1">
+          <mxGeometry x="870" y="550" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="state_rag_gen" value="Generating RAG Response" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40" vertex="1" parent="1">
+          <mxGeometry x="870" y="640" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="state_chat_view" value="Viewing Chatbot Response" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40" vertex="1" parent="1">
+          <mxGeometry x="870" y="730" width="140" height="50" as="geometry" />
+        </mxCell>
+        <!-- Common End Path -->
+        <mxCell id="state_rep_gen" value="Generating Report" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40" vertex="1" parent="1">
+          <mxGeometry x="485" y="820" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="state_rep_view" value="Viewing Report" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40" vertex="1" parent="1">
+          <mxGeometry x="485" y="910" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="state_logout" value="Logout" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40" vertex="1" parent="1">
+          <mxGeometry x="485" y="1000" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="state_final" value="" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" vertex="1" parent="1">
+          <mxGeometry x="540" y="1090" width="30" height="30" as="geometry" />
+        </mxCell>
+        <!-- Transitions -->
+        <mxCell id="t1" value="" style="endArrow=block;endFill=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="state_start" target="state_auth">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t2" value="Login Success" style="endArrow=block;endFill=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="state_auth" target="state_dashboard">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t3" value="Submit Soil Data" style="endArrow=block;endFill=1;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;rounded=0;" edge="1" parent="1" source="state_dashboard" target="state_soil_entry">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="225" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t4" value="Upload Image" style="endArrow=block;endFill=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="state_dashboard" target="state_img_upload">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t5" value="Send Query" style="endArrow=block;endFill=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;rounded=0;" edge="1" parent="1" source="state_dashboard" target="state_chatbot">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="940" y="225" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <!-- Soil Flow -->
+        <mxCell id="t6" value="" style="endArrow=block;endFill=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="state_soil_entry" target="state_soil_val">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t7" value="Validation Success" style="endArrow=block;endFill=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="state_soil_val" target="state_crop_proc">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t8" value="Recommendation Generated" style="endArrow=block;endFill=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="state_crop_proc" target="state_crop_view">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t9" value="Generate Fertilizer" style="endArrow=block;endFill=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="state_crop_view" target="state_fert_proc">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t10" value="Fertilizer Generated" style="endArrow=block;endFill=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="state_fert_proc" target="state_fert_view">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <!-- Disease Flow -->
+        <mxCell id="t11" value="" style="endArrow=block;endFill=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="state_img_upload" target="state_img_val">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t12" value="Image Validation Success" style="endArrow=block;endFill=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="state_img_val" target="state_disease_det">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t13" value="Detection Completed" style="endArrow=block;endFill=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="state_disease_det" target="state_disease_view">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t14" value="Generate Treatment" style="endArrow=block;endFill=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="state_disease_view" target="state_treat_gen">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <!-- RAG Flow -->
+        <mxCell id="t15" value="Send Query" style="endArrow=block;endFill=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="state_chatbot" target="state_embed">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t16" value="Embedding Generated" style="endArrow=block;endFill=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="state_embed" target="state_vector">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t17" value="Documents Retrieved" style="endArrow=block;endFill=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="state_vector" target="state_retrieve">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t18" value="Context Ready" style="endArrow=block;endFill=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="state_retrieve" target="state_rag_gen">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t19" value="RAG Response Generated" style="endArrow=block;endFill=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="state_rag_gen" target="state_chat_view">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <!-- Report Merging -->
+        <mxCell id="t20" value="Generate Report" style="endArrow=block;endFill=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;rounded=0;" edge="1" parent="1" source="state_fert_view" target="state_rep_gen">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="845" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t21" value="Treatment Generated" style="endArrow=block;endFill=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="state_treat_gen" target="state_rep_gen">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t22" value="Back to Dashboard" style="endArrow=block;endFill=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;rounded=0;" edge="1" parent="1" source="state_chat_view" target="state_dashboard">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1080" y="755" />
+              <mxPoint x="1080" y="225" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t23" value="" style="endArrow=block;endFill=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="state_rep_gen" target="state_rep_view">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t24" value="Logout" style="endArrow=block;endFill=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="state_rep_view" target="state_logout">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t25" value="" style="endArrow=block;endFill=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="state_logout" target="state_final">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <!-- Error Loops -->
+        <mxCell id="t26" value="Validation Failed" style="endArrow=block;endFill=1;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;rounded=0;" edge="1" parent="1" source="state_soil_val" target="state_soil_entry">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="395" />
+              <mxPoint x="60" y="305" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t27" value="Image Invalid" style="endArrow=block;endFill=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;rounded=0;" edge="1" parent="1" source="state_img_val" target="state_img_upload">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="660" y="395" />
+              <mxPoint x="660" y="305" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t28" value="Login Failed" style="endArrow=block;endFill=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;rounded=0;" edge="1" parent="1" source="state_auth" target="state_auth">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="660" y="115" />
+              <mxPoint x="660" y="103" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
